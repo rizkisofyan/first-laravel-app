@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LatihanController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,3 +55,16 @@ Route::get('/order/{makanan}/{minuman}/{harga}', function($makanan, $minuman, $h
 Route::get('/post/{page?}', function ($page = 1) {
     return view('pages.post', compact('page'));
 });
+
+// Route handle w/ controller
+Route::get('/latihan', [LatihanController::class, 'perkenalan']);
+
+Route::get('/data/{nama}/{alamat}/{umur}', [LatihanController::class, 'data']);
+
+Route::get('/siswa', [LatihanController::class, 'siswa']);
+
+Route::get('/kampus', [LatihanController::class, 'kampus']);
+
+Route::get('/televisi', [LatihanController::class, 'televisi']);
+
+Route::get('/belanja', [LatihanController::class, 'belanja']);
