@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LatihanController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\SekolahController;
 
 /*
 |--------------------------------------------------------------------------
@@ -72,3 +73,19 @@ Route::get('/televisi', [LatihanController::class, 'televisi']);
 Route::get('/belanja', [LatihanController::class, 'belanja']);
 
 Route::get('/posts', [PostController::class, 'tampil']);
+
+Route::get('/posts/{id}', [PostController::class, 'search']);
+
+Route::get('/posts/title/{title}', [PostController::class, 'searchByTitle']);
+
+Route::get('/posts/create/{title}/{content}', [PostController::class, 'tambah']);
+
+Route::get('/posts/update/{id}/{title}/{content}', [PostController::class, 'update']);
+
+Route::get('/posts/delete/{id}', [PostController::class, 'delete']);
+
+Route::get('/sekolah/siswa', [SekolahController::class, 'siswa']);
+
+Route::get('/sekolah/guru', [SekolahController::class, 'guru']);
+
+Route::get('/sekolah/jurusan', [SekolahController::class, 'jurusan']);

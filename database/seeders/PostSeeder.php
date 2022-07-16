@@ -25,7 +25,7 @@ class PostSeeder extends Seeder
                 'content' => 'Lorem Ipsum'
             ],
             [
-                'title' => 'Tutrial Instalasi NodeJs',
+                'title' => 'Tutorial Instalasi NodeJs',
                 'content' => 'Lorem Ipsum'
             ]
         ];
