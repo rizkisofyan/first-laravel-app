@@ -12,8 +12,7 @@
             <br>
             <table border="1" cellspacing="0">
                 <tr>
-                    <th>Nomor</th>
-                    <th>ID</th>
+                    <th>Nomor</th>                    
                     <th>Judul</th>
                     <th>Konten</th>
                 </tr>
