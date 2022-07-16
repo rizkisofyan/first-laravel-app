@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LatihanController;
+use App\Http\Controllers\PostController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -68,3 +70,5 @@ Route::get('/kampus', [LatihanController::class, 'kampus']);
 Route::get('/televisi', [LatihanController::class, 'televisi']);
 
 Route::get('/belanja', [LatihanController::class, 'belanja']);
+
+Route::get('/posts', [PostController::class, 'tampil']);
